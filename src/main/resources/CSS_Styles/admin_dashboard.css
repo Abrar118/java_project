@@ -1,0 +1,63 @@
+.main_pane
+{
+    -fx-background-color: white;
+}
+
+.date_and_name_pane
+{
+    -fx-background-color: #46494f;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, black, 3,0,0,3);
+}
+
+.date_and_name_pane Text,Label
+{
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+#name
+{
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
+
+.dashboard_sign_container
+{
+    -fx-alignment: center;
+}
+
+.dashboard_sign_container Text
+{
+    -fx-font-size: 50;
+    -fx-fill: black;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, black, 3,0,0,3);
+}
+
+.menu_buttons_pane
+{
+    -fx-alignment: center;
+    -fx-spacing: 150;
+}
+
+.menu_buttons_pane Button
+{
+    -fx-background-color: #202124;
+    -fx-pref-width: 80;
+    -fx-pref-height: 80;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow(three-pass-box, black, 5,0,0,5);
+}
+
+.menu_buttons_pane Button: hover
+{
+    -fx-cursor: hand;
+    -fx-background-color: #bf1b46;
+}
+
+.menu_buttons_pane FontAwesomeIconView
+{
+    -fx-fill: white ;
+    -glyph-size: 30;
+}

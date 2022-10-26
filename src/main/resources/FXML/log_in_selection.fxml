@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" stylesheets="@../CSS_Styles/log_in_selection.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.log_in_selection">
+   <ImageView id="txt" fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Image url="@../Images/log_in_selection.png" />
+   </ImageView>
+   <FontAwesomeIconView fx:id="admin_logo" fill="WHITE" glyphName="USER" layoutX="348.0" layoutY="310.0" onMouseClicked="#on_mouse_click" size="70" styleClass="admin-user-logo" />
+   <FontAwesomeIconView fx:id="user_logo" fill="WHITE" glyphName="USERS" layoutX="85.0" layoutY="312.0" onMouseClicked="#on_mouse_click" size="70" styleClass="admin-user-logo" text="" />
+   <Text id="txt" layoutX="95.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" />
+   <Text id="txt" layoutX="334.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" />
+   <FontAwesomeIconView fx:id="selection_back_arrow" glyphName="ARROW_LEFT" layoutX="89.0" layoutY="565.0" size="20" />
+   <Text fill="WHITE" layoutX="123.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="back">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Text>
+</AnchorPane>

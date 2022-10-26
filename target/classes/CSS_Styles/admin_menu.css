@@ -1,0 +1,102 @@
+.main_pane
+{
+    -fx-background-color: #202124;
+}
+
+#icon
+{
+    -fx-fill: #bf1b46;
+}
+
+.main_pane FontAwesomeIconView
+{
+    -fx-fill: black;
+    -glyph-size: 50;
+}
+
+.main_pane Text
+{
+    -fx-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.button_container
+{
+    -fx-alignment: center;
+    -fx-spacing: 30;
+}
+
+.button_container Button
+{
+    -fx-pref-width: 170;
+    -fx-pref-height: 40;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 11;
+    -fx-alignment: center_left;
+}
+
+.button_container Button: hover
+{
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+}
+
+.button_container Line
+{
+    -fx-stroke-width: 2;
+    -fx-stroke: white;
+}
+
+.button_container FontAwesomeIconView
+{
+    -glyph-size: 20;
+}
+
+#log_out_button
+{
+    -fx-pref-width: 170;
+    -fx-pref-height: 40;
+    -fx-background-color: #bf1b46;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 11;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+}
+
+#log_out_button FontAwesomeIconView
+{
+    -fx-fill: white;
+}
+
+#about_us
+{
+    -fx-pref-width: 170;
+    -fx-pref-height: 40;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 11;
+    -fx-alignment: center;
+}
+
+#about_us: hover
+{
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+}
+
+#about_us FontAwesomeIconView
+{
+    -glyph-size: 20;
+}

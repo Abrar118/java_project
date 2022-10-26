@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../CSS_Styles/log_in.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.log_in_window">
+   <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="6.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Image url="@../Images/log_in.png" />
+   </ImageView>
+   <FontAwesomeIconView id="back_button" fx:id="log_in_back_arrow" fill="WHITE" glyphName="ARROW_LEFT" layoutX="99.0" layoutY="575.0" size="20" />
+   <AnchorPane layoutX="83.0" layoutY="110.0" prefHeight="358.0" prefWidth="365.0" styleClass="anchor_pane">
+      <TextField fx:id="username" layoutX="39.0" layoutY="165.0" prefHeight="25.0" prefWidth="300.0" />
+      <PasswordField fx:id="password" layoutX="39.0" layoutY="242.0" prefHeight="25.0" prefWidth="300.0" />
+      <Button fx:id="sign_in_button" layoutX="39.0" layoutY="303.0" mnemonicParsing="false" onMouseClicked="#sign_in_button_click" text="SIGN IN" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="8.0" layoutY="184.0" />
+      <FontAwesomeIconView glyphName="USER" layoutX="7.0" layoutY="262.0" />
+      <Text layoutX="39.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="Bell MT" size="15.0" />
+         </font>
+      </Text>
+   </AnchorPane>
+   <Text fill="WHITE" layoutX="133.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="back">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Text>
+</AnchorPane>

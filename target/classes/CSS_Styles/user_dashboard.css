@@ -1,0 +1,148 @@
+/*#3d3e9c*/
+
+.main_anchor_pane
+{
+    -fx-background-color: white;
+}
+
+.user_name
+{
+    -fx-font-size: 24;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.date_label
+{
+    -fx-text-fill: black;
+    -fx-font-size: 15;
+}
+
+.account_section
+{
+    -fx-background-radius: 10 10 10 10;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+.account
+{
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+    -fx-background-color: #202124;
+}
+
+.account: hover
+{
+    -fx-cursor: hand;
+    -fx-background-color: #bf1b46;
+}
+
+
+.account VBox
+{
+    -fx-background-color: white;
+}
+
+.account Text
+{
+    -fx-fill: white;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+}
+
+.account FontAwesomeIconView
+{
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.account_balance
+{
+    -fx-text-fill: white;
+    -fx-font-size: 3em;
+    -fx-font-weight: bold;
+}
+
+.account_number
+{
+    -fx-text-fill: white;
+    -fx-font-size: 1.5em;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+}
+
+.overview
+{
+    -fx-background-color: #202124;
+    -fx-background-radius: 10;
+    -fx-padding: 5 5 5 5;
+    -fx-spacing: 5;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+}
+
+.overview_container
+{
+    -fx-background-color: white;
+    -fx-padding: 10;
+    -fx-spacing: 20;
+    -fx-alignment: center_left;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: dotted;
+}
+
+.overview_container Line
+{
+    -fx-stroke: black;
+}
+
+.overview_container_income_label
+{
+    -fx-text-fill: green;
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+}
+
+.overview_container_expense_label
+{
+    -fx-text-fill: #AA0000;
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+}
+
+.income
+{
+    -fx-fill: Black;
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+}
+
+.expense
+{
+    -fx-fill: Black;
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+}
+
+
+.transaction
+{
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #AAAAAA;
+}
+
+.transaction .scroll-bar:vertical
+{
+    -fx-scale-x: 0;
+}
+
+.list_cell
+{
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 15 0 15 0;
+}
+

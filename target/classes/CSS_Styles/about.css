@@ -1,0 +1,21 @@
+,anchor_pane
+{
+    -fx-background-color: #202124;
+}
+.anchor_pane FontAwesomeIconView
+{
+    -fx-fill: white;
+    -fx-effect: dropshadow(two-pass-box, black, 5, 0, 0, 5);
+}
+
+.anchor_pane VBox
+{
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+.anchor_pane Text
+{
+    -fx-fill: white;
+    -fx-font-size: 2em;
+}

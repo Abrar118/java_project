@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1030.0" styleClass="main_anchor_pane" stylesheets="@../../CSS_Styles/user_transaction.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.Customer.deposit_controller">
+   <Text layoutX="25.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="list_header" text="Recent" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="961.92626953125" AnchorPane.topAnchor="325.75" />
+   <ListView fx:id="deposit_list" layoutX="25.0" layoutY="355.0" prefHeight="338.0" prefWidth="678.0" styleClass="list_view" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="327.0" AnchorPane.topAnchor="355.0" />
+   <AnchorPane layoutX="25.0" layoutY="98.0" prefHeight="154.0" prefWidth="273.0" styleClass="transaction_amount">
+      <Text layoutX="81.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Deposit" />
+      <Label fx:id="total_deposit" layoutX="50.0" layoutY="68.0" text="\$5879.255" />
+   </AnchorPane>
+   <AnchorPane layoutX="364.0" layoutY="98.0" prefHeight="154.0" prefWidth="273.0" styleClass="transaction_amount">
+      <Text layoutX="61.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Withdrawal" />
+      <Label fx:id="total_withdraw" layoutX="61.0" layoutY="64.0" text="\$5879.255" />
+   </AnchorPane>
+   <Button id="new_transaction_button" fx:id="new_deposit" layoutX="776.0" layoutY="409.0" mnemonicParsing="false" text="New Deposit">
+      <graphic>
+         <FontAwesomeIconView glyphName="PLUS" />
+      </graphic>
+   </Button>
+   <Button id="new_transaction_button" fx:id="new_withdrawal" layoutX="776.0" layoutY="469.0" mnemonicParsing="false" text="New Withdrawal">
+      <graphic>
+         <FontAwesomeIconView glyphName="PLUS" />
+      </graphic>
+   </Button>
+   <AnchorPane fx:id="new_withdraw_pane" layoutX="724.0" layoutY="292.0" prefHeight="137.0" prefWidth="283.0" styleClass="new_transaction">
+      <Text layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Withdrawal Amount" />
+      <TextField fx:id="withdraw_amount" layoutX="24.0" layoutY="71.0" prefHeight="26.0" prefWidth="241.0" />
+      <FontAwesomeIconView fx:id="send_withdraw" glyphName="PAPER_PLANE" layoutX="234.0" layoutY="46.0" />
+   </AnchorPane>
+   <AnchorPane fx:id="new_deposit_pane" layoutX="724.0" layoutY="440.0" prefHeight="137.0" prefWidth="283.0" styleClass="new_transaction">
+      <Text layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposit Amount" />
+      <TextField fx:id="deposit_amount" layoutX="24.0" layoutY="71.0" prefHeight="26.0" prefWidth="241.0" />
+      <FontAwesomeIconView fx:id="send_deposit" glyphName="PAPER_PLANE" layoutX="230.0" layoutY="46.0" />
+   </AnchorPane>
+   <Text layoutX="35.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deposits and Withdrawals">
+      <font>
+         <Font name="Calibri Bold" size="26.0" />
+      </font>
+   </Text>
+   <Line endX="888.0" layoutX="136.0" layoutY="60.0" startX="-100.0" />
+</AnchorPane>

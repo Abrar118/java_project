@@ -1,0 +1,37 @@
+.main_pane
+{
+    -fx-background-color: none;
+}
+
+#txt
+{
+    -fx-font-size: 35;
+    -fx-font-face: Footlight MT Light;
+    -fx-fill: white;
+    -fx-effect: dropshadow(three-pass-box, black, 5,0, 0, 5);
+}
+
+#circle2
+{
+    -fx-stroke: #dbd0d3;
+}
+
+#circle1
+{
+    -fx-stroke: #ba0736;
+}
+
+#circle3
+{
+    -fx-stroke: white;
+}
+
+.anchor_pane: hover
+{
+    -fx-cursor: hand;
+}
+
+#icon: hover
+{
+    -fx-cursor: hand;
+}

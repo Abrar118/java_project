@@ -1,0 +1,66 @@
+.main_pane
+{
+    -fx-background-color: white;
+}
+
+.main_pane Line
+{
+    -fx-stroke: #202124;
+}
+
+.upper_pane
+{
+    -fx-alignment: center_left;
+}
+
+.upper_pane Text
+{
+    -fx-fill: black;
+    -fx-font-size: 25;
+}
+
+.upper_pane FontAwesomeIconView
+{
+    -fx-fill: black;
+}
+
+#options
+{
+    -fx-fill: black;
+    -fx-font-size: 15;
+}
+
+#options: hover
+{
+    -fx-fill: #ff5668;
+    -fx-font-size: 20;
+    -fx-cursor: hand;
+}
+
+.profile_pic_anchor_pane Label
+{
+    -fx-text-fill: #FFD700;
+    -fx-font-size: 15;
+}
+
+.information_pane Label
+{
+    -fx-text-fill: black;
+}
+
+.accounts: hover
+{
+    -fx-cursor: hand;
+}
+
+.account_holder
+{
+    -fx-spacing: 10;
+}
+
+.account_holder AnchorPane
+{
+    -fx-background-color: #202124;
+    -fx-effect: dropshadow(three-pass-box, black, 5, 0, 0, 5);
+    -fx-background-radius: 10;
+}

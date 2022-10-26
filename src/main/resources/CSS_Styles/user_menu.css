@@ -1,0 +1,90 @@
+.outer_vbox
+{
+    -fx-alignment: center;
+    -fx-background-color: #202124;
+    -fx-alignment: top_center;
+    -fx-padding: 10;
+    -fx-spacing: 30 ;
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,0);
+}
+
+.outer_vbox Line
+{
+    -fx-stroke: black;
+}
+.outer_vbox FontAwesomeIconView
+{
+    -fx-fill: #bf1b46;
+}
+
+.outer_vbox Text
+{
+    -fx-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-font-face: Bell MT;
+}
+
+.outer_vbox Button
+{
+    -fx-pref-width: 170;
+    -fx-pref-height: 40;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 11;
+    -fx-alignment: center_left;
+}
+
+.outer_vbox Button:hover
+{
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+}
+
+.outer_vbox Button FontAwesomeIconView
+{
+    -fx-fill: #bf1b46;
+}
+
+#log_out_button
+{
+    -fx-pref-width: 170;
+    -fx-pref-height: 40;
+    -fx-background-color: #bf1b46;
+    -fx-text-fill: white;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, #000000, 5,0,0,5);
+}
+
+#log_out_button FontAwesomeIconView
+{
+    -fx-fill: white;
+}
+
+#about_us_container
+{
+    -fx-pref-width: 170;
+    -fx-pref-height: 40;
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+#about_us_container:hover
+{
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+}
+
+#about_us_container FontAwesomeIconView
+{
+    -fx-fill: #bf1b46;
+}

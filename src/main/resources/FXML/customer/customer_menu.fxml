@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="250.0" styleClass="outer_vbox" stylesheets="@../../CSS_Styles/user_menu.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.Customer.Customer_menu_controller">
+   <AnchorPane prefHeight="701.0" prefWidth="230.0">
+      <FontAwesomeIconView fill="WHITE" glyphName="BANK" layoutX="92.0" layoutY="48.0" size="40" />
+      <Text fill="WHITE" layoutX="74.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAT BANK">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="dashboard_button" layoutX="30.0" layoutY="181.0" mnemonicParsing="false" text="Dashboard">
+         <graphic>
+            <FontAwesomeIconView glyphName="HOME" />
+         </graphic>
+      </Button>
+      <Button fx:id="profile_button" layoutX="30.0" layoutY="251.0" mnemonicParsing="false" text="Profile">
+         <graphic>
+            <FontAwesomeIconView glyphName="ID_CARD" />
+         </graphic>
+      </Button>
+      <Button fx:id="transaction_button" layoutX="30.0" layoutY="321.0" mnemonicParsing="false" text="Transactions">
+         <graphic>
+            <FontAwesomeIconView glyphName="MONEY" />
+         </graphic>
+      </Button>
+      <Button fx:id="deposit_button" layoutX="30.0" layoutY="391.0" mnemonicParsing="false" text="Desposits and Withdrawals">
+         <graphic>
+            <FontAwesomeIconView glyphName="DOLLAR" />
+         </graphic>
+      </Button>
+      <Line endX="100.0" layoutX="115.0" layoutY="464.0" startX="-100.0" stroke="WHITE" />
+      <Button id="log_out_button" fx:id="log_out_button" layoutX="30.0" layoutY="492.0" mnemonicParsing="false" text="Log out">
+         <graphic>
+            <FontAwesomeIconView glyphName="POWER_OFF" />
+         </graphic>
+      </Button>
+      <Button id="about_us_container" fx:id="about_button" layoutX="30.0" layoutY="625.0" mnemonicParsing="false" text="About">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="INFO" />
+         </graphic>
+      </Button>
+   </AnchorPane>
+</VBox>

@@ -1,0 +1,37 @@
+#notification_and_contact: hover
+{
+    -fx-fill: #bf1b46;
+    -fx-font-size: 20;
+    -fx-cursor: hand;
+}
+
+#admin_name
+{
+    -fx-font-weight: bold;
+    -fx-font-family: Algerian;
+    -fx-font-size: 25;
+    -fx-text-fill: #202124;
+}
+
+#profile_name_pane
+{
+    -fx-background-color: #ebecf0;
+    -fx-background-radius: 20;
+}
+
+#rating_and_client
+{
+    -fx-alignment: center_left;
+    -fx-spacing: 10;
+}
+
+#rating_and_client Label
+{
+    -fx-text-fill: #bf1b46;
+    -fx-font-size: 25;
+}
+
+#rating_and_client FontAwesomeIconView
+{
+    -glyph-size: 30;
+}

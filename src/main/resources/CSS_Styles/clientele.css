@@ -1,0 +1,131 @@
+.search_bar
+{
+    -fx-background-color: #dbd7d7;
+    -fx-border-color: #bf1b46;
+    -fx-border-width: 0 0 1 0;
+}
+
+#search_button: hover
+{
+    -fx-cursor: hand;
+    -fx-fill: #bf1b46;
+}
+
+
+
+
+
+.option
+{
+    -glyph-size: 30;
+    -fx-fill: black;
+}
+
+.option: hover
+{
+    -fx-cursor: hand;
+    -fx-fill: #bf1b46;
+    -glyph-size: 35;
+}
+
+.option:hover .option_pane
+{
+    visibility: true;
+}
+
+.option .option_pane
+{
+    -fx-background-color: #202124;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, gray, 5,0,0,5);
+}
+
+.option .option_pane FontAwesomeIconView
+{
+    -glyph-size: 20;
+    -fx-fill: #bf1b46;
+}
+
+.option .option_pane Text
+{
+    -fx-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.option .option_pane Text: hover
+{
+    -fx-cursor: hand;
+    -fx-font-size: 17;
+}
+
+
+
+
+.clientele_pane
+{
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, gray, 5,0,0,5);
+}
+
+.clientele_pane Text
+{
+    -fx-fill: white;
+    -fx-font-family: Calibri;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.clientele_pane Label
+{
+    -fx-text-fill: white;
+    -fx-font-family: Calibri;
+    -fx-font-size: 40;
+}
+
+.clientele_pane FontAwesomeIconView
+{
+    -glyph-size: 30;
+    -fx-fill: white;
+}
+
+
+
+
+.message_pane
+{
+    -fx-background-color: #202124;
+    -fx-background-radius: 10 0 0 10;
+}
+
+
+.client_button1
+{
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, gray, 5,0,0,5);
+}
+
+.client_button2
+ {
+     -fx-background-color: linear-gradient(to left, #82112f, #a8163d, #bf1b46);
+     -fx-text-fill: white;
+     -fx-font-weight: bold;
+     -fx-alignment: center_left;
+     -fx-effect: dropshadow(three-pass-box, gray, 5,0,0,5);
+ }
+
+ .client_button1:hover
+ {
+    -fx-background-color: #202124;
+    -fx-cursor: hand;
+ }
+
+ .client_button2:hover
+  {
+     -fx-background-color: #202124;
+     -fx-cursor: hand;
+  }

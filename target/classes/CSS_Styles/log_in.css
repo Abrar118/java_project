@@ -1,0 +1,51 @@
+.anchor_pane Text
+{
+    -fx-fill: white;
+    -fx-font-size: 15;
+}
+
+.anchor_pane FontAwesomeIconView
+{
+    -fx-fill: white;
+    -glyph-size: 20;
+}
+
+.anchor_pane PasswordField
+{
+    -fx-border-color: #ff5668;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.anchor_pane TextField
+{
+    -fx-border-color: #ff5668;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.anchor_pane Button
+{
+    -fx-background-color: linear-gradient(to right, #d13243, #ff5668);
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, black, 5,0,0,5);
+    -fx-pref-width: 300;
+    -fx-pref-height: 30;
+}
+
+.anchor_pane Button: hover
+{
+    -fx-background-color: white;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+}
+
+#back_button: hover
+{
+    -fx-cursor: hand;
+    -fx-fill: #ff5668;
+}

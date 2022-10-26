@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1030.0" stylesheets="@../../CSS_Styles/admin_activity.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.Admin.activity_controller">
+   <AnchorPane layoutX="66.0" layoutY="34.0" prefHeight="137.0" prefWidth="317.0" styleClass="pending_activity">
+      <Text layoutX="24.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pending Activity(s)" />
+      <Label fx:id="pending_activity" layoutX="69.0" layoutY="49.0" text="5" />
+      <FontAwesomeIconView glyphName="PUZZLE_PIECE" layoutX="224.0" layoutY="94.0" size="50" text="" />
+   </AnchorPane>
+   <Button id="schedule_button" fx:id="schedule_button" layoutX="781.0" layoutY="78.0" mnemonicParsing="false" text="Schedule an activity">
+      <graphic>
+         <FontAwesomeIconView glyphName="PLUS" />
+      </graphic>
+   </Button>
+   <ListView fx:id="activity_list" layoutX="66.0" layoutY="255.0" prefHeight="421.0" prefWidth="915.0" styleClass="transaction" />
+   <AnchorPane fx:id="new_activity_pane" layoutX="650.0" layoutY="34.0" prefHeight="144.0" prefWidth="331.0" scaleX="0.0" scaleY="0.0" styleClass="new_activity">
+      <Text layoutX="39.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due date" />
+      <DatePicker fx:id="due_date" layoutX="39.0" layoutY="38.0" prefHeight="25.0" prefWidth="146.0" promptText="pick a date" />
+      <Text layoutX="39.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Activity Name" />
+      <TextField fx:id="new_activity_name" layoutX="40.0" layoutY="92.0" prefHeight="25.0" prefWidth="267.0" promptText="activity">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIconView fx:id="confirm_schedule" fill="WHITE" glyphName="HOURGLASS" layoutX="264.0" layoutY="55.0" size="30" />
+   </AnchorPane>
+   <Text layoutX="66.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recent Activities">
+      <font>
+         <Font name="Calibri" size="20.0" />
+      </font>
+   </Text>
+</AnchorPane>

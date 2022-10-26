@@ -1,0 +1,113 @@
+.main_anchor_pane
+{
+    -fx-pref-height: 720;
+    -fx-pref-width: 1030;
+    -fx-background-color: #f4f4f4;
+}
+
+/*list*/
+.list_header
+{
+    -fx-fill: black;
+    -fx-font-family: Calibri;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}
+
+.main_anchor_pane .list_view
+{
+    -fx-background-color: white;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #AAAAAA;
+}
+
+.main_anchor_pane .list_cell
+{
+    -fx-background-color: #EEEEEE;
+    -fx-pref-width: 970;
+}
+/*list*/
+
+
+.transaction_amount
+{
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, gray, 5,0,0,5);
+}
+
+.transaction_amount Text
+{
+    -fx-fill: white;
+    -fx-font-family: Calibri;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.transaction_amount Label
+{
+    -fx-font-family: Calibri;
+    -fx-font-size: 40;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#new_transaction_button
+{
+    -fx-pref-width: 200;
+    -fx-pref-height: 50;
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(three-pass-box, gray, 5,0,0,5);
+}
+
+#new_transaction_button FontAwesomeIconView
+{
+    -fx-fill: white;
+}
+
+#new_transaction_button: hover
+{
+    -fx-background-color: #202124;
+    -fx-cursor: hand;
+}
+
+.new_transaction
+{
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, gray, 5,0,0,5);
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+}
+
+.new_transaction Text
+{
+    -fx-fill: white;
+    -fx-font-family: Calibri;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.new_transaction TextField
+{
+    -fx-border-color: black;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.new_transaction FontAwesomeIconView
+{
+    -fx-fill: white;
+    -glyph-size: 20;
+}
+
+.new_transaction FontAwesomeIconView: hover
+{
+    -fx-fill: black;
+    -fx-cursor: hand;
+    -glyph-size: 30;
+}

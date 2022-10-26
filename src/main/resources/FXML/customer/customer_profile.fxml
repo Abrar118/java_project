@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1030.0" styleClass="main_pane" stylesheets="@../../CSS_Styles/user_profile.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.Customer.Customer_profile_controller">
+   <Line endX="791.0" layoutX="142.0" layoutY="80.0" startX="-50.0" />
+   <AnchorPane layoutX="91.0" layoutY="16.0" prefHeight="51.0" prefWidth="842.0" styleClass="upper_pane">
+      <Text layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Profile" />
+      <Text id="options" fx:id="messages" layoutX="653.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages" />
+      <Text id="options" fx:id="contacts" layoutX="781.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts" />
+      <FontAwesomeIconView fill="WHITE" glyphName="BELL" layoutX="634.0" layoutY="41.0" selectionFill="#1b0101" />
+      <FontAwesomeIconView fill="WHITE" glyphName="ADDRESS_BOOK" layoutX="763.0" layoutY="41.0" />
+   </AnchorPane>
+   <AnchorPane layoutX="91.0" layoutY="117.0" prefHeight="367.0" prefWidth="283.0" styleClass="profile_pic_anchor_pane">
+      <ImageView fitHeight="303.0" fitWidth="283.0" pickOnBounds="true">
+         <Image url="@../../Images/images.jpg" />
+      </ImageView>
+      <Text fill="#64666e" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Type: ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Label layoutX="85.0" layoutY="324.0" text="Gold Member" textFill="WHITE" />
+   </AnchorPane>
+   <AnchorPane layoutX="399.0" layoutY="117.0" prefHeight="578.0" prefWidth="609.0">
+      <Label layoutY="-11.0" styleClass="information_pane" text="Abrar Mahir Esam" textFill="#070000">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="66.0" layoutY="90.0" onMouseClicked="#account_click" prefHeight="145.0" prefWidth="106.0" styleClass="accounts">
+         <Text fill="#1e0101" layoutX="14.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </Text>
+         <Text fill="#ff5668" layoutX="36.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+            <font>
+               <Font size="61.0" />
+            </font>
+         </Text>
+      </AnchorPane>
+      <HBox fx:id="account_pane" layoutX="20.0" layoutY="315.0" prefHeight="183.0" prefWidth="570.0" styleClass="account_holder">
+         <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <Text fill="WHITE" layoutX="59.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Label fx:id="checking_balance" layoutX="36.0" layoutY="52.0" text="\$450.89" textFill="#ff5668">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </AnchorPane>
+         <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <Text fill="WHITE" layoutX="65.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Label fx:id="savings_balance" layoutX="29.0" layoutY="51.0" text="\$450.89" textFill="#ff5668">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </AnchorPane>
+         <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <Text fill="WHITE" layoutX="43.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixed Deposit">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Label fx:id="fixed_balance" layoutX="29.0" layoutY="49.0" text="\$450.89" textFill="#ff5668">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </AnchorPane>
+      </HBox>
+      <AnchorPane layoutX="317.0" layoutY="108.0" prefHeight="145.0" prefWidth="106.0">
+         <Text fill="#1b0101" layoutX="121.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loan">
+            <font>
+               <Font size="19.0" />
+            </font>
+         </Text>
+         <Text fx:id="loan" fill="#ff5668" layoutX="36.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$875.24">
+            <font>
+               <Font size="61.0" />
+            </font>
+         </Text>
+      </AnchorPane>
+   </AnchorPane>
+</AnchorPane>

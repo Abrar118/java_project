@@ -1,0 +1,44 @@
+.inner_pane TextField, PasswordField
+{
+    -fx-pref-width: 300;
+    -fx-pref-height: 20;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #ff5668;
+}
+
+.inner_pane Text
+{
+    -fx-fill: black;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
+
+.inner_pane FontAwesomeIconView
+{
+    -glyph-size: 15;
+}
+
+.inner_pane Button
+{
+    -fx-background-color: linear-gradient(to right, #82112f, #a8163d, #bf1b46);
+    -fx-pref-width: 850;
+    -fx-pref-height: 30;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.inner_pane Button: hover
+{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+#show_policy: hover
+{
+    -fx-cursor: hand;
+    -fx-fill: #ff5668;
+}

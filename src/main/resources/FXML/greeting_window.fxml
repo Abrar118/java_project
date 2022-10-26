@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main_pane" stylesheets="@../CSS_Styles/greeting.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.greeting_window">
+   <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Image url="@../Images/greeting.png" />
+   </ImageView>
+   <AnchorPane fx:id="enter" layoutX="202.0" layoutY="393.0" prefHeight="40.0" prefWidth="169.0" styleClass="anchor_pane" />
+   <AnchorPane fx:id="policies" layoutX="79.0" layoutY="393.0" prefHeight="40.0" prefWidth="90.0" styleClass="anchor_pane" />
+   <FontAwesomeIconView id="icon" fill="#bf1b46" glyphName="TWITTER" layoutX="79.0" layoutY="559.0" size="30" />
+   <Text fill="WHITE" layoutX="105.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="twitter" />
+   <FontAwesomeIconView id="icon" fill="#bf1b46" glyphName="FACEBOOK" layoutX="196.0" layoutY="559.0" size="30" />
+   <Text fill="WHITE" layoutX="213.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="acebook" />
+   <FontAwesomeIconView id="icon" fill="#bf1b46" glyphName="INSTAGRAM" layoutX="322.0" layoutY="559.0" size="30" />
+   <Text fill="WHITE" layoutX="354.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instagram" />
+</AnchorPane>

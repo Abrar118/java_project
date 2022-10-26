@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1030.0" stylesheets="@../../CSS_Styles/admin_profile.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank_management.Controllers.Admin.admin_profile_controller">
+   <Line endX="850.0" layoutX="135.0" layoutY="68.0" startX="-100.0" stroke="#202124" />
+   <Text fill="#202124" layoutX="35.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Information">
+      <font>
+         <Font name="Calibri Bold" size="25.0" />
+      </font>
+   </Text>
+   <Text id="notification_and_contact" fx:id="notification" fill="#202124" layoutX="789.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notification">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Text>
+   <Text id="notification_and_contact" fx:id="contacts" fill="#202124" layoutX="920.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contacts">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Text>
+   <FontAwesomeIconView fill="#202124" glyphName="BELL" layoutX="767.0" layoutY="50.0" />
+   <FontAwesomeIconView fill="#202124" glyphName="ADDRESS_BOOK" layoutX="900.0" layoutY="50.0" />
+   <AnchorPane id="profile_name_pane" layoutX="35.0" layoutY="226.0" prefHeight="418.0" prefWidth="359.0">
+      <Label id="admin_name" fx:id="name" layoutX="59.0" layoutY="209.0" text="Abrar Mahir Esam" textFill="#202124">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="admin_type" layoutX="133.0" layoutY="250.0" text="Regular Admin" textFill="GREY">
+         <font>
+            <Font name="Calibri Italic" size="15.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <Circle fx:id="profile_picture" fill="WHITE" layoutX="215.0" layoutY="263.0" radius="143.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+   <Line endX="-50.0" endY="400.0" layoutX="510.0" layoutY="233.0" startX="-50.0" stroke="#202124" />
+   <AnchorPane layoutX="484.0" layoutY="233.0" prefHeight="401.0" prefWidth="495.0">
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Social information:" />
+      <Text layoutX="14.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Information:" />
+      <Text layoutX="14.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Relevant Links:" />
+   </AnchorPane>
+   <HBox id="rating_and_client" layoutX="528.0" layoutY="91.0" prefHeight="100.0" prefWidth="200.0">
+      <FontAwesomeIconView glyphName="USERS" />
+      <Label fx:id="client_count" text="25" />
+   </HBox>
+   <HBox id="rating_and_client" layoutX="735.0" layoutY="91.0" prefHeight="100.0" prefWidth="200.0">
+      <FontAwesomeIconView glyphName="STAR" />
+      <Label fx:id="rating" text="4.1" />
+   </HBox>
+</AnchorPane>

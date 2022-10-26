@@ -1,0 +1,18 @@
+FontAwesomeIconView
+{
+    -fx-fill: white;
+    -fx-effect: dropshadow(three-pass-box, black, 10,0,0,10);
+}
+
+FontAwesomeIconView:hover
+{
+    -fx-cursor: hand;
+    -fx-fill: #ba0736;
+}
+
+#txt
+{
+    -fx-fill: white;
+    -fx-font-size: 24;
+    -fx-font-face: Footlight MT Light;
+}
